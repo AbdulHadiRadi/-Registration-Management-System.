@@ -4,20 +4,26 @@ import org.junit.jupiter.api.Test;
 
 
 class PersonTest {
-    Person person = new Person("Malek",56521256);
+    Person buyer = new Buyer("Malek",56521256);
+    Person seller = new Seller("Jack",5445256);
     @Test
     public void testPersonConstructor(){
-        Assertions.assertNotNull(person);
+        Assertions.assertNotNull(buyer);
+        Assertions.assertNotNull(seller);
     }
     @Test
     public void testGetName() {
-        Assertions.assertEquals("Malek", person.name());
-        Assertions.assertNotEquals("Abdul", person.name());
+        Assertions.assertEquals("Malek", buyer.getName());
+        Assertions.assertNotEquals("Abdul", buyer.getName());
+        Assertions.assertEquals("Jack", seller.getName());
+        Assertions.assertNotEquals("Abdul", seller.getName());
     }
     @Test
-    public void testGetAmount() {
-        Assertions.assertEquals(56521256, person.nid());
-        Assertions.assertNotEquals(34101, person.nid());
+    public void testGetNid() {
+        Assertions.assertEquals(56521256, buyer.getNid());
+        Assertions.assertNotEquals(34101, buyer.getNid());
+        Assertions.assertEquals(5445256, seller.getNid());
+        Assertions.assertNotEquals(347751, seller.getNid());
     }
 
 }

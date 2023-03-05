@@ -30,13 +30,8 @@ public class RegistrationBuilder {
         return this;
     }
 
-    public RegistrationBuilder setBuyer(LinkedList<Person> buyer) {
-        registration.setBuyer(buyer);
-        return this;
-    }
-
-    public RegistrationBuilder setSeller(LinkedList<Person> seller) {
-        registration.setSeller(seller);
+    public RegistrationBuilder setPersons(LinkedList<Person> persons) {
+        registration.setPersons(persons);
         return this;
     }
 

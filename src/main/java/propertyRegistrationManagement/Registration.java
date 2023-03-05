@@ -9,8 +9,7 @@ public class Registration {
     private int regNumber;
     private long price;
     private LinkedList<Land> land;
-    private LinkedList<Person> buyer;
-    private LinkedList<Person> seller;
+    private LinkedList<Person> persons;
 
     public LocalDate getDate() {
         return date;
@@ -52,19 +51,12 @@ public class Registration {
         this.land = land;
     }
 
-    public LinkedList<Person> getBuyer() {
-        return buyer;
+    public LinkedList<Person> getPersons() {
+        return persons;
     }
 
-    public void setBuyer(LinkedList<Person> buyer) {
-        this.buyer = buyer;
+    public void setPersons(LinkedList<Person> persons) {
+        this.persons = persons;
     }
 
-    public LinkedList<Person> getSeller() {
-        return seller;
-    }
-
-    public void setSeller(LinkedList<Person> seller) {
-        this.seller = seller;
-    }
 }
