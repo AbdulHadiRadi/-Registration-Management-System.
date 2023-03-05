@@ -12,13 +12,13 @@ class SurveyTest {
     }
     @Test
     void testGetSurveyNumber() {
-        Assertions.assertEquals(7001, survey.getSurveyNumber());
-        Assertions.assertNotEquals(4501, survey.getSurveyNumber());
+        Assertions.assertEquals(7001, survey.surveyNumber());
+        Assertions.assertNotEquals(4501, survey.surveyNumber());
     }
 
     @Test
     void testGetPoint() {
-        Assertions.assertEquals(999, survey.getPoint());
-        Assertions.assertNotEquals(4501, survey.getPoint());
+        Assertions.assertEquals(999, survey.point());
+        Assertions.assertNotEquals(4501, survey.point());
     }
 }
