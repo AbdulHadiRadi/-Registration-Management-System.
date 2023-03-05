@@ -21,4 +21,5 @@ class SurveyTest {
         Assertions.assertEquals(999, survey.point());
         Assertions.assertNotEquals(4501, survey.point());
     }
+
 }
