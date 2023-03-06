@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16678024-c857-48b9-ba7c-f35065d08fd0" name="Changes" comment="Update of Builder Design pattern on LandRegistration">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/LandRegistered.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/Registration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/RegistrationBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/propertyRegistrationManagement/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/propertyRegistrationManagement/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/propertyRegistrationManagement/Registration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/propertyRegistrationManagement/RegistrationBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/propertyRegistrationManagement/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/Survey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/propertyRegistrationManagement/LandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/LandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/propertyRegistrationManagement/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/propertyRegistrationManagement/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/propertyRegistrationManagement/SurveyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/SurveyTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="16678024-c857-48b9-ba7c-f35065d08fd0" name="Changes" comment="converting Survey class into a record" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +191,7 @@
       <workItem from="1678098530083" duration="1532000" />
       <workItem from="1678104212350" duration="2497000" />
       <workItem from="1678107130427" duration="7302000" />
-      <workItem from="1678135172361" duration="4422000" />
+      <workItem from="1678135172361" duration="5024000" />
     </task>
     <task id="LOCAL-00001" summary="Property Registration first Day">
       <created>1677966413408</created>
@@ -244,7 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678096801962</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add features and fix bug as well as modifying design of the system">
+      <created>1678142277128</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678142277128</updated>
+    </task>
+    <task id="LOCAL-00007" summary="converting Survey class into a record">
+      <created>1678142406355</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678142406355</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +268,8 @@
     <MESSAGE value="Changing the Design of the system through creating  Buyer.java and Seller.java derived from abstract class Person.java." />
     <MESSAGE value="Changing the Design of the system through deleting  Buyer.java and Seller.java and change Person.java class from abstract class and add status attribute." />
     <MESSAGE value="Update of Builder Design pattern on LandRegistration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update of Builder Design pattern on LandRegistration" />
+    <MESSAGE value="Add features and fix bug as well as modifying design of the system" />
+    <MESSAGE value="converting Survey class into a record" />
+    <option name="LAST_COMMIT_MESSAGE" value="converting Survey class into a record" />
   </component>
 </project>
