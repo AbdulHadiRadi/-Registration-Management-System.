@@ -1,4 +1,4 @@
-package propertyRegistrationManagement;
+package LandRegistrationManagement;
 public class Land {
     private final String area;
     private final double amount;
