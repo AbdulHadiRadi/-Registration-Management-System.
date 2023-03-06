@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 
 class PersonTest {
-    Person buyer = new Buyer("Malek",56521256);
-    Person seller = new Seller("Jack",5445256);
+    Person buyer = new Person("Buyer", "Malek",56521256);
+    Person seller = new Person("Seller", "Jack",5445256);
     @Test
     public void testPersonConstructor(){
         Assertions.assertNotNull(buyer);
@@ -25,5 +25,11 @@ class PersonTest {
         Assertions.assertEquals(5445256, seller.getNid());
         Assertions.assertNotEquals(347751, seller.getNid());
     }
-
+    @Test
+    public void testGetStatus(){
+        Assertions.assertEquals("Buyer", buyer.getStatus());
+        Assertions.assertNotEquals("Seller", buyer.getStatus());
+        Assertions.assertEquals("Seller", seller.getStatus());
+        Assertions.assertNotEquals("Buyer", seller.getStatus());
+    }
 }

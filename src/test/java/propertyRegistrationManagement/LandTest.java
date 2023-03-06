@@ -13,8 +13,8 @@ class LandTest {
     }
     @Test
     public void testLandConstructor(){
-        Assertions.assertNotNull(land);
         Assertions.assertNull(emptyLand);
+        Assertions.assertNotNull(land);
     }
     @Test
     public void testGetArea() {

@@ -13,8 +13,8 @@ class RegistrationTest {
     @Test
     public void testRegistrationBuilder() {
         lands.add(land);
-        persons.add(new Buyer("Malek", 39358));
-        persons.add(new Seller("Jobbar", 174459));
+        persons.add(new Person("Buyer","Malek", 39358));
+        persons.add(new Person("Seller", "Jobbar", 174459));
         RegistrationBuilder buildReg = new RegistrationBuilder();
         Registration registration = buildReg.setDate(LocalDate.of(2002,6, 23)).setRegNumber(7001).setRegOffice("Sreemangal").setLand(lands).setPrice(2000000).setPersons(persons).builder();
         Assertions.assertNotNull(registration);
