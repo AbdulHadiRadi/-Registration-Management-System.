@@ -1,7 +1,7 @@
 package LandRegistrationManagement;
-public class LandRegistered{
+public class RegisteredLand {
     private final RegistrationBuilder buildRegistraion;
-    public LandRegistered() {
+    public RegisteredLand() {
         this.buildRegistraion =  new Registration.LandRegistration();
     }
 

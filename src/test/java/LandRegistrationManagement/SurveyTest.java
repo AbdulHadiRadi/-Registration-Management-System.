@@ -1,11 +1,21 @@
 package LandRegistrationManagement;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
 class SurveyTest {
-    Survey survey = new Survey(7001,999);
+    private Survey survey;
 
+    @BeforeEach
+    void setUp(){
+        survey = new Survey(7001,999);
+    }
+    @AfterEach
+    public void tearDown(){
+        survey = null;
+    }
     @Test
     public void testSurveyConstructor(){
         Assertions.assertNotNull(survey);

@@ -1,15 +1,15 @@
 package LandRegistrationManagement;
 
 import java.time.LocalDate;
-import java.util.LinkedList;
+import java.util.List;
 
 public class Registration {
     private final LocalDate date;
     private final String regOffice;
     private final int regNumber;
     private final long price;
-    private final LinkedList<Land> land;
-    private final LinkedList<Person> persons;
+    private final List<Land> land;
+    private final List<Person> persons;
 
     private Registration(LandRegistration registration) {
         this.date = registration.date;
@@ -35,10 +35,10 @@ public class Registration {
     public long getPrice() {
         return this.price;
     }
-    public LinkedList<Person> getPersons() {
+    public List<Person> getPersons() {
         return this.persons;
     }
-    public LinkedList<Land> getLand() {
+    public List<Land> getLand() {
         return this.land;
     }
 
@@ -49,8 +49,8 @@ public class Registration {
         private String regOffice;
         private int regNumber;
         private long price;
-        private LinkedList<Land> land;
-        private LinkedList<Person> persons;
+        private List<Land> land;
+        private List<Person> persons;
 
         public LandRegistration() {
         }
@@ -75,12 +75,12 @@ public class Registration {
             return this;
         }
 
-        public LandRegistration setLand(LinkedList<Land> land) {
+        public LandRegistration setLand(List<Land> land) {
             this.land = land;
             return this;
         }
 
-        public LandRegistration setPersons(LinkedList<Person> persons) {
+        public LandRegistration setPersons(List<Person> persons) {
             this.persons = persons;
             return this;
         }

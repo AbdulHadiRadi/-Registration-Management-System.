@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16678024-c857-48b9-ba7c-f35065d08fd0" name="Changes" comment="converting Survey class into a record" />
+    <list default="true" id="16678024-c857-48b9-ba7c-f35065d08fd0" name="Changes" comment="ArodManagement package upload with initial design.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ArodManagement/Auction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ArodManagement/Commission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ArodManagement/Garden.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ArodManagement/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ArodManagement/Tib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArodManagement/AuctionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArodManagement/CommissionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArodManagement/GardenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArodManagement/ProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArodManagement/TibTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/LandRegistered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/RegisteredLand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/RegistrationBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandRegistrationManagement/RegistrationBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/LandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/LandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/SurveyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LandRegistrationManagement/SurveyTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +33,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Record" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -58,64 +79,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "4308e9f3daadd873a1803ceb13990b36",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4308e9f3daadd873a1803ceb13990b36&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ArodManagement" />
       <recent name="propertyRegistrationManagement" />
       <recent name="propertyManagement" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegistrationTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+  <component name="RunManager" selected="JUnit.TibTest">
+    <configuration name="All in LandRegistrationManagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LandRegistrationManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuctionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LandRegistrationManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LandRegistrationManagement.*" />
+          <option name="PATTERN" value="ArodManagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="propertyRegistrationManagement" />
-      <option name="MAIN_CLASS_NAME" value="LandRegistrationManagement.LandTest" />
+      <option name="PACKAGE_NAME" value="ArodManagement" />
+      <option name="MAIN_CLASS_NAME" value="ArodManagement.AuctionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,21 +155,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LandRegistrationManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LandRegistrationManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="propertyRegistrationManagement" />
-      <option name="MAIN_CLASS_NAME" value="LandRegistrationManagement.RegistrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SurveyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LandRegistrationManagement" />
       <extension name="coverage">
@@ -166,13 +170,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TibTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LandRegistrationManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArodManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ArodManagement" />
+      <option name="MAIN_CLASS_NAME" value="ArodManagement.TibTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegistrationTest" />
-        <item itemvalue="JUnit.PersonTest" />
-        <item itemvalue="JUnit.LandTest" />
+        <item itemvalue="JUnit.TibTest" />
+        <item itemvalue="JUnit.All in LandRegistrationManagement" />
+        <item itemvalue="JUnit.AuctionTest" />
         <item itemvalue="JUnit.SurveyTest" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PersonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +211,11 @@
       <workItem from="1678104212350" duration="2497000" />
       <workItem from="1678107130427" duration="7302000" />
       <workItem from="1678135172361" duration="5024000" />
+      <workItem from="1678281655238" duration="3070000" />
+      <workItem from="1678303084873" duration="11620000" />
+      <workItem from="1678351011694" duration="8662000" />
+      <workItem from="1678372248765" duration="424000" />
+      <workItem from="1678389403042" duration="1069000" />
     </task>
     <task id="LOCAL-00001" summary="Property Registration first Day">
       <created>1677966413408</created>
@@ -270,6 +294,8 @@
     <MESSAGE value="Update of Builder Design pattern on LandRegistration" />
     <MESSAGE value="Add features and fix bug as well as modifying design of the system" />
     <MESSAGE value="converting Survey class into a record" />
-    <option name="LAST_COMMIT_MESSAGE" value="converting Survey class into a record" />
+    <MESSAGE value="ArodManagement package upload with intial design" />
+    <MESSAGE value="ArodManagement package upload with initial design." />
+    <option name="LAST_COMMIT_MESSAGE" value="ArodManagement package upload with initial design." />
   </component>
 </project>

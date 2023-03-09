@@ -1,7 +1,7 @@
 package LandRegistrationManagement;
 
 import java.time.LocalDate;
-import java.util.LinkedList;
+import java.util.List;
 
 public interface RegistrationBuilder {
     RegistrationBuilder setDate(LocalDate date);
@@ -12,9 +12,9 @@ public interface RegistrationBuilder {
 
     RegistrationBuilder setPrice(long price);
 
-    RegistrationBuilder setLand(LinkedList<Land> land);
+    RegistrationBuilder setLand(List<Land> land);
 
-    RegistrationBuilder setPersons(LinkedList<Person> persons);
+    RegistrationBuilder setPersons(List<Person> persons);
 
     Registration builder();
 }
