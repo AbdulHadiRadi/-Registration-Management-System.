@@ -1,2 +1,2 @@
-# Arod-Management-System.
-Developing a Management System for a Arod based on requirements which were gathered from Key Stakeholders.
+# Information-Management-System.
+Developing a Information Management System for a company based on requirements which were gathered from Key Stakeholders.
